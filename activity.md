@@ -2,7 +2,7 @@ Git Intro Activity
 ==================
 
 A. Form teams
--------------
+Teammate Chase: Chase and Me(Alexander Escobar). Chase is the Driver while I navigate
 
 Form a 2-person team. Try to find someone who uses the same platform as you (e.g., Windows, Linux, etc.). If you can't, that's fine. If you are the odd-person-out, join a team of 2.
 
@@ -23,13 +23,13 @@ You will be rotating roles. Your instructor will let you know when to switch rol
 
 
 B. Setup
--------------
+We created a google doc four our team and copied it
 
 1. Create and share a shared document (Google Doc, Etherpad, etc.) for your team.
 2. Copy and paste this document into your shared document.
 
 C. Download and install Git
----------------------------
+We both downloaded it on windows
 
 Download and install Git for your operating system:
 
@@ -59,14 +59,14 @@ Run the following commands.
 
 1.  What does `git help` do?
 
-    ```
+    It displays general help for Git commands, letting us know where to start and what commands are available
 
 
     ```
 
 2.  What does `-ag` cause `git help` to do?
 
-    ```
+    This lists all available Git commans in detial
 
 
 
@@ -89,7 +89,7 @@ consider changing this configuration before you walk away.
 
 1.  What are these commands doing?
 
-    ```
+    They set the user’s name and email for commits made in the repository, which shows who made each change.
 
 
 
@@ -97,7 +97,7 @@ consider changing this configuration before you walk away.
 
 2.  What is the purpose of `--global`?
 
-    ```
+   The `--global` option applies these settings for every Git repository on this machine
 
 
 
@@ -116,14 +116,14 @@ cd first_project
 1.  By default any file that starts with `.` is hidden. How do you
     display a hidden file?
 
-    ```
+    Use `ls -a` in the terminal to list all files
 
 
     ```
 
 2. Run this command to show the hidden files in the current directory. Are there any?
 
-    ```
+    No hidden files show up right after creating the directory.
 
 
 
@@ -138,7 +138,7 @@ cd first_project
 
 4. Check for hidden files again.  What was created by `git init`?
 
-    ```
+    The `.git` folder was created, which contains all the configuration and history for this Git repository.
 
 
 
@@ -147,7 +147,7 @@ cd first_project
 
 3.  What do you think would happen if you delete `.git`?
 
-    ```
+    Deleting `.git` removes Git tracking from the folder, essentially turning it back into a regular directory
 
 
 
@@ -158,7 +158,7 @@ cd first_project
     it is a under version control. What could you look for to determine
     if the project is being managed using Git?
 
-    ```
+    `.git` folder in the project directory. If it's there, the project is managed by Git.
 
 
 
@@ -178,7 +178,7 @@ Run `git status` before and after each of these commands.
 
 1.  What kind of information does `git status` report?
 
-    ```
+    It shows the state of the working directory and staging area
 
 
 
@@ -186,7 +186,7 @@ Run `git status` before and after each of these commands.
 
 2.  What does `git add names.txt` do?
 
-    ```
+    It stages `names.txt`, preparing it to be included in the next commit.
 
 
 
@@ -194,7 +194,7 @@ Run `git status` before and after each of these commands.
 
 3.  What does `git commit -m "Add our names."` do?
 
-    ```
+    It commits the staged changes, saving them with a message describing what was changed.
 
 
 
@@ -215,7 +215,7 @@ Run `git status` before and after each of these commands.
 
 4.  What does `git add .` do? What do you think `.` means?
 
-    ```
+    The `.` stages all changed files in the current directory, making them ready for commit.
 
 
 
@@ -223,7 +223,7 @@ Run `git status` before and after each of these commands.
 
 5.  What does `git commit` (without -m) do?
 
-    ```
+    It opens the default editor to write a multi-line commit message.
 
 
 
@@ -232,7 +232,7 @@ Run `git status` before and after each of these commands.
 6.  If you want to write a more detailed commit message (which is
     good practice) what command would you use?
 
-    ```
+    Use `git commit` without `-m` to open the editor for a detailed message.
 
 
 
@@ -240,7 +240,7 @@ Run `git status` before and after each of these commands.
 
 7.  What does `git log` do?
 
-    ```
+    It shows the history of commits in the repository, including messages, author, and timestamps.
 
 
 
@@ -270,7 +270,7 @@ Run the following commands:
 
     **Staged**
 
-    ```
+    names.txt (staged for commit)
 
 
 
@@ -278,7 +278,7 @@ Run the following commands:
 
     **Unstaged**
 
-    ```
+    movies.txt (modified but not staged) 
 
 
 
@@ -286,7 +286,7 @@ Run the following commands:
 
     **Untracked**
 
-    ```
+    foods.txt (new file, not staged) 
 
 
 
@@ -295,7 +295,7 @@ Run the following commands:
 1.  If you run `git commit` what changes will be committed (***don't do
     it***)?
 
-    ```
+    Only the changes to `names.txt` will be committed, as it's the only staged file.
 
 
 
@@ -303,7 +303,7 @@ Run the following commands:
 
 2.  What command do you run to stage changes?
 
-    ```
+    Use `git add [filename]` to stage changes.
 
 
 
@@ -311,7 +311,7 @@ Run the following commands:
 
 3.  What command do you run to unstage changes?
 
-    ```
+    Use `git reset [filename]` to unstage changes.
 
 
 
@@ -324,7 +324,7 @@ Run the following commands:
 
 1.  What does `git diff` display?
 
-    ```
+    It shows unstaged changes between the working directory and the staging area.
 
 
 
@@ -332,7 +332,7 @@ Run the following commands:
 
 2.  What does `git diff --cached` display?
 
-    ```
+    It shows changes that are staged and ready to be committed.
 
 
 
@@ -342,7 +342,8 @@ Run the following commands:
     and stage the changes to `movies.txt`. Execute your commands and
     confirm they worked.
 
-    ```
+    git reset names.txt
+    git it add movies.txt
 
 
 
@@ -352,7 +353,7 @@ Run the following commands:
     run `git status`. What do you observe? Explain what you think is
     going on.
 
-    ```
+    ````git statusnow showsmovies.txt` as both staged (with old changes) and unstaged (with new changes)
 
 
 
@@ -361,7 +362,7 @@ Run the following commands:
 5.  Delete `names.txt`. Then run `git status`. What do you observe?
     Explain what you think is going on.
 
-    ```
+    Git notices the deletion and marks it as a change to be staged.
 
 
 
@@ -370,7 +371,7 @@ Run the following commands:
 6.  Rename `movies.txt` to `last-movies`. Run `git status`. Observe
     and explain.
 
-    ```
+    Git recognizes the rename as a change, showing `movies.txt` as deleted and `last-movies` as untracked.
 
 
 
@@ -380,7 +381,8 @@ Run the following commands:
     untracked file and commit (with any reasonable message you like).
     Execute them.
 
-    ```
+    git add .
+    git commit -m "Add and modify files as needed."
 
 
 
@@ -389,7 +391,9 @@ Run the following commands:
 8.  In Git vernacular, `index`, `cache`, and `stage` all refer to the
     same thing. What does it hold?
 
-    ```
+    It holds changes that are staged and ready to be committed.
+
+
 
 
 
@@ -398,7 +402,8 @@ Run the following commands:
 9.  Why have a `stage`? Why not just commit all changes since the last
     commit?
 
-    ```
+    Staging lets us selectively commit changes, giving more control over what goes into each commit.
+
 
 
 
@@ -417,7 +422,8 @@ Run the following commands:
 
 1.  What does `git reset --soft ``"HEAD^" `do?
 
-    ```
+    It moves `HEAD` back one commit, keeping changes staged.
+
 
 
 
@@ -434,7 +440,8 @@ Run the following commands:
 
 1.  What does `git reset --hard "HEAD^"`` `do?
 
-    ```
+    It moves `HEAD` back one commit and discards all changes from that commit.
+
 
 
 
@@ -442,7 +449,8 @@ Run the following commands:
 
 2.  What is the difference between `--hard` and `--soft`?
 
-    ```
+    ````--softkeeps changes staged, while--hard` removes them entirely.```
+
 
 
 
@@ -450,14 +458,16 @@ Run the following commands:
 
 3.  What do you think `HEAD` means?
 
-    ```
+    It represents the current commit or snapshot that we’re working from.
+
 
 
     ```
 
 4.  What do you think `HEAD^` means?
 
-    ```
+    It refers to the commit just before the current `HEAD` commit.
+
 
 
     ```
